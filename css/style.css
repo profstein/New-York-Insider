@@ -1,0 +1,326 @@
+@supports (grid-area: auto){
+
+/* grid */
+article.grid{
+    display: grid;
+    align-items: center;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: repeat(4, max-content);
+    grid-template-areas:
+       "carousel carousel"
+       "image1 intro"
+       "map image2"
+       "image3 testimony";
+  }
+
+
+.hero{ grid-area: carousel;
+    margin-bottom: 5%;
+    }
+
+
+.image-thumbnail1{ grid-area: image1;
+
+    }
+
+.image-thumbnail2{ grid-area: image2; }
+.image-thumbnail3{ grid-area: image3; }
+
+.map{ grid-area: map; }
+
+.intro{ grid-area: intro; }
+
+.testimony{ grid-area: testimony; }
+
+article.homeGrid{
+    display: grid;
+    align-items: center;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: repeat(2, max-content);
+    grid-template-areas:
+       "cammy cammytext"
+    "vukantext vukan";
+  }
+
+.cammy{ grid-area: cammy;
+
+    }
+.cammytext {
+    grid-area: cammytext;
+
+    }
+
+.vukan{ grid-area: vukan;
+
+    }
+.vukantext{ grid-area: vukantext;
+
+    }
+
+.cammytext h2{
+        text-align: center;
+    color: dimgray;
+    }
+    .cammytext p{
+    text-align: center;
+        margin-top: 2%;
+    }
+
+    .vukantext h2{
+        text-align: center;
+    color: dimgray;
+    }
+    .vukantext p{
+    text-align: center;
+        margin-top: 2%;
+    }
+/*style*/
+.title h2{
+    text-align: center;
+    color: #BBDDF5;
+    padding-bottom: 3%;
+    line-height: 1.8em;
+}
+
+
+
+.title h1{
+    font-family: 'Abril Fatface', cursive;
+    font-size: 2.5em;
+    text-align: center;
+    color: dimgray;
+    padding: 2% 0;
+}
+h4{
+    font-family: 'Caveat', cursive;
+    font-size: 1.4em;
+    text-align: center;
+    color: dimgray;
+    margin-bottom: -3%;
+    padding: 0 3%;
+}
+em{
+    font-family: 'Abril Fatface', cursive;
+    margin-bottom: -2%;
+    text-align: center;
+    color: dimgray;
+    font-style: normal;
+}
+.map h2{
+        padding-left: 7%;
+       font-size: 1.3em;
+    }
+p{
+    font-family: 'News Cycle', sans-serif;
+    padding: 0 10%;
+}
+
+
+.testimony p{
+   text-align: right;
+    margin:3% 0;
+
+}
+
+.website, .hours{
+        float: right;
+        width: 50%;
+    margin-top: -8%;
+    }
+    .website{
+        margin-top: -18%;
+    }
+    .directions,.admission{
+        padding-top: 3%;
+    }
+
+img {width: auto;
+ 	height: auto;
+ 	max-width: 100%;}
+
+.website a{
+        text-decoration: none;
+        font-family: 'News Cycle', sans-serif;
+    color: black;
+    }
+.website a:hover{
+    color: #BBDDF5;
+    }
+    .homeGrid a{
+        text-decoration: none;
+    color: dimgray;
+    }
+.homeGrid a:hover{
+    color: #BBDDF5;
+    }
+
+    .author{
+     text-align: center;
+        background-color: #E0E3DE;
+        padding: 2% 0;
+        margin-top: 5%;
+
+    }
+
+    .author h2{padding-left: 0;
+    color: white;
+    font-size: 1.3em;}
+
+    .author p {color: white;
+    padding-top: 1%;}
+/* Base Styles */
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* This adds a transition to all links. It is optional. */
+a {
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+
+/* Navigation Styles */
+
+
+/* Header */
+.header {
+    position: relative;
+    width: 100%;
+    background-color: #E0E3DE; /* change to your preferred color */
+
+    /* In order to keep your text vertically centered in the header you will need to keep the height and line height the same */
+    height: 4em;
+    line-height: 4em;
+    border-bottom: 3px solid #BBDDF5; /* change to your preferred color */
+}
+
+
+/* Styling for Site title and logo. It is not required to have a logo, but you should have a title. */
+
+.logo {
+    font-family: 'Abril Fatface', cursive;
+    font-size: 1.5em; /* change this to be the font-size you want for Site title */
+    margin-left: 1em;
+}
+
+.logo a {
+    color: #fff; /* change to your preferred color */
+    text-decoration: none;
+}
+
+.logo a:hover {
+    color: #BBDDF5; /* change to your preferred color */
+}
+
+
+/* Mobile menu */
+
+#menu-icon {
+    font-family: 'Abril Fatface', cursive;
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 1em;
+    color: #fff; /* change to your preferred color */
+    text-decoration: none;
+    cursor: pointer;
+    padding: 0 0.4em;
+}
+
+#menu-icon:hover {
+    color: #BBDDF5; /* change to your preferred color */
+    text-decoration: none;
+    border: none;
+}
+
+.navbar {
+    background-color: #E0E3DE; /* change to your preferred color */
+    float: none;
+    max-height: 0;
+    overflow: hidden;
+    /*    This makes it slide down. Bigger numbers make it slide slower */
+    -moz-transition: max-height 0.6s;
+    -o-transition: max-height 0.6s;
+    -webkit-transition: max-height 0.6s;
+    transition: max-height 0.6s;
+}
+
+.navbar .menu {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.navbar .menu li {
+    font-family: 'Abril Fatface', cursive;
+    font-size: 1.3em;
+
+    list-style-type: none;
+    display: block;
+}
+
+.navbar .menu li a {
+    display: block;
+    text-decoration: none;
+    color: white; /* change to your preferred color */
+    padding: 0 0.8em;
+    border-bottom: 1px solid #BBDDF5; /* change to your preferred color */
+}
+
+.navbar .menu li a:hover {
+    background-color: #BBDDF5; /* change to your preferred color */
+    color: dimgray;
+}
+
+.navbar .menu li a.active {
+    background-color: #BBDDF5; /* change to your preferred color */
+color: dimgray;
+    }
+
+.expand {
+    max-height: 100em;
+    /* this gives the nav height and expands it */
+}
+
+
+/* This changes the styling on larger screens. Adjust the min-width if you want the nav to change at a different screen width */
+
+@media only screen and (min-width: 48em) {
+    .header {
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+    .logo {
+        margin-left: 0;
+    }
+    .logo,
+    .navbar {
+        display: inline-block;
+    }
+    /* Mobile menu icon */
+    #menu-icon {
+        display: none;
+    }
+    .navbar {
+        float: right;
+        max-height: 100%;
+    }
+    .navbar .menu li {
+        list-style-type: none;
+        display: inline-block;
+        text-align: center;
+    }
+    .navbar .menu li a {
+        display: block;
+        border-bottom: 0;
+    }
+}
+/* end large screen nav styling. */
